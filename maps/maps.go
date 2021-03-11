@@ -1,3 +1,6 @@
+// Steve Kalvi 3/11/21
+// Exercise: Maps
+
 package main
 
 import (

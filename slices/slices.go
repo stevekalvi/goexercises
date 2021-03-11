@@ -1,3 +1,6 @@
+// Steve Kalvi 3/11/21
+// Exercise: Slices
+
 package main
 
 import "golang.org/x/tour/pic"
@@ -8,7 +11,7 @@ func Pic(dx, dy int) [][]uint8 {
   for y_index, _ := range y {
       x := make([]uint8, dx)
       for x_index, _ := range x {
-          x[x_index] = uint8(x_index * y_index) // assign the index to the element of the slice
+          x[x_index] = uint8(x_index * y_index) 
       }
       y[y_index] = x  // assign x to each y slice
   }
