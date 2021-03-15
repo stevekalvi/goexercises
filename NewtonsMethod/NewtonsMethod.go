@@ -8,6 +8,8 @@ import (
 	"math"
 )
 
+const limit = .000000000000001
+
 func Sqrt(x float64) float64 {
     z := float64(1)
     for i:=1; i < 10; i++ { 
@@ -17,12 +19,11 @@ func Sqrt(x float64) float64 {
 	return z
 }
 
-// Use Absolute value in case negative difference when
-// approaching limit
+// Use Absolute value in case negative difference when approaching limit
 // p or Prev value can't be set to z first time through.
 func SqrtLimit(x float64) float64 {
     z := float64(1)
-    for p:=float64(2); math.Abs(p-z) > .000000000000001;{
+    for p:=float64(2); math.Abs(p-z) > limit;{
 	   p = z
 	   z -= (z*z - x)/ (2*z)
 	   fmt.Println("z is: ",z, "p is: ",p)
