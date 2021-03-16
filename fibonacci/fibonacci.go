@@ -1,5 +1,5 @@
 // Steve Kalvi 3/15/21
-// Fibonacci Sequence Closure starting at zero
+// Fibonacci Sequence Closure starting at zero vs. golang playgound example in tour of go.
 package main
 
 import "fmt"

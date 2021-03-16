@@ -1,3 +1,5 @@
+// See Readme for more information regarding this important golang concept
+
 package main
 
 import "fmt"
